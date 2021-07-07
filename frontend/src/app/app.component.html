@@ -1,3 +1,109 @@
-<app-header></app-header>
-<app-nav></app-nav>
-<app-footer></app-footer>
+<div class="content homePrincipal">
+
+  <div class="container">
+
+    <h2>>> {{ title }} <<</h2>
+
+    <hr>
+
+    <form #orderForm="ngForm">
+
+      <div>
+
+        <div class="row mb-xlg form">
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="text-box">Nome:</label>
+              <input type="text" class="form-control" name="nomeCliente" [(ngModel)]="nomeCliente">
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="text-box">Produto:</label>
+              <select class="custom-select" name="opcaoProduto" [(ngModel)]="produtoComprado">
+                <option *ngFor="let produto of produtos" [ngValue]="produto">{{ produto.descricao }}</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="text-box">Quantidade:</label>
+              <input type="text" class="form-control" name="quantidade" [(ngModel)]="quantidade">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row mt-xlg mb-xlg">
+
+        <div class="col-md-3">
+          <button class="button-color width-button" (click)="incluirItem()">Incluir item</button>
+        </div>
+
+        <div class="col-md-9 right">
+          <button class="button-color width-button" (click)="fecharNota()">Fechar Esta Nota</button>
+        </div>
+
+      </div>
+
+      <div class="row mb-xlg mt-xlg">
+
+        <div class="col-md-12 right">
+          <button class="button-color width-button" (click)="novaNota()">Realizar Nova Nota</button>
+        </div>
+
+      </div>
+
+    </form>
+
+    <hr>
+
+    <h2>{{ nomeClienteTabela }}</h2>
+
+    <br>
+
+    <div class="row mt-xlg tabela">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Codigo do Item</th>
+              <th>Descrição</th>
+              <th>Valor da Unidade</th>
+              <th>Total de Desconto</th>
+              <th>Quantidade</th>
+              <th>Valor total com desconto</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let i of tabela">
+              <td>{{ i.produto.codigo }}</td>
+              <td>{{ i.produto.descricao }}</td>
+              <td>{{ i.produto.valorUnitario }}</td>
+              <td>{{ i.produto.desconto }}</td>
+              <td>{{ i.qtd }}</td>
+              <td>{{ i.totalItem }}</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="5">Total da Nota</td>
+              <td class="totalGeral">{{ confirm_msg }}</td>
+            </tr>
+          </tfoot>
+
+        </table>
+
+    </div>
+
+  </div>
+
+</div>

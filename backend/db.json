@@ -1,19 +1,96 @@
 {
-  "products": [
+  "produtos": [
     {
-      "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 5.89
+      "codigo": 123,
+      "descricao": "Blusa de Moletom",
+      "valorUnitario": 129.9,
+      "desconto": 0
     },
     {
-      "id": 2,
-      "name": "Notebook Mac Pro",
-      "price": 12000.89
+      "codigo": 234,
+      "descricao": "Calça Jeans",
+      "valorUnitario": 79.9,
+      "desconto": 10
     },
     {
-      "id": 3,
-      "name": "Samsumg S20+",
-      "price": 5000.89
+      "codigo": 345,
+      "descricao": "Jaqueta de Couro",
+      "valorUnitario": 249.9,
+      "desconto": 20
+    },
+    {
+      "codigo": 456,
+      "descricao": "Cueca Box",
+      "valorUnitario": 25,
+      "desconto": 0
+    },
+    {
+      "codigo": 567,
+      "descricao": "3 Par de Meia",
+      "valorUnitario": 9.99,
+      "desconto": 0
+    }
+  ],
+  "listaNF": [
+    {
+      "nomeCliente": "jose jose",
+      "produtosComprados": [
+        {
+          "codigo": 123,
+          "descricao": "Blusa de Moletom",
+          "valorUnitario": 129.9,
+          "desconto": 0
+        }
+      ],
+      "id": 1
+    },
+    {
+      "nomeCliente": "jose jose",
+      "produtosComprados": [
+        {
+          "codigo": 123,
+          "descricao": "Blusa de Moletom",
+          "valorUnitario": 129.9,
+          "desconto": 0
+        },
+        {
+          "codigo": 567,
+          "descricao": "3 Par de Meia",
+          "valorUnitario": 9.99,
+          "desconto": 0
+        },
+        {
+          "codigo": 567,
+          "descricao": "3 Par de Meia",
+          "valorUnitario": 9.99,
+          "desconto": 0
+        }
+      ],
+      "id": 2
+    },
+    {
+      "nomeCliente": "teste",
+      "produtosComprados": [
+        {
+          "codigo": 123,
+          "descricao": "Blusa de Moletom",
+          "valorUnitario": 129.9,
+          "desconto": 0
+        }
+      ],
+      "id": 3
+    },
+    {
+      "nomeCliente": "teste",
+      "produtosComprados": [
+        {
+          "codigo": 234,
+          "descricao": "Calça Jeans",
+          "valorUnitario": 79.9,
+          "desconto": 10
+        }
+      ],
+      "id": 4
     }
   ]
 }

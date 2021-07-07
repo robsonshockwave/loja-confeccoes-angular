@@ -1,0 +1,95 @@
+.form {
+  display: flex;
+}
+
+.width-button {
+  width: 200px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(142, 0, 167);
+  font-weight: bold;
+}
+
+.container {
+  border: 1px solid rgb(255, 0, 234);
+  height: 100vh;
+  margin-bottom: 30px;
+  background: rgb(168, 168, 168);
+}
+
+.homePrincipal {
+  font-family: Arial;
+  margin-top: 30px;
+}
+
+.mb-xlg {
+  margin-bottom: 10px;
+}
+
+.mt-xlg {
+  margin-bottom: 20px;
+}
+
+hr {
+  border: solid 1px rgb(247, 0, 255);
+}
+
+table {
+  width: 1000px;
+  margin: auto;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+thead tr {
+  border-bottom: solid 10px rgb(255, 0, 255);
+}
+
+tbody tr:hover {
+  background-color: #dedede;
+}
+
+thead tr th,
+tbody tr td {
+  border: 1px solid rgb(255, 0, 255);
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+}
+
+tfoot {
+  background-color: #444;
+  color: #fff;
+  font-weight: bold;
+}
+
+.totalGeral {
+  text-align: center;
+}
+
+.text-box {
+  color: #fff;
+  background: #444;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.right {
+  text-align: right;
+}
+
+.button-color {
+  color: white;
+  font-weight: bold;
+  background: rgb(142, 0, 167);
+  border-radius: 30px;
+  border: 1px solid rgb(255, 0, 242);
+}
